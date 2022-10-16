@@ -1,7 +1,6 @@
-*{
+* {
   margin: 0;
   padding: 0;
-  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -34,21 +33,101 @@ body {
 
 /*Nav Bar*/
 
-.parentDiv {
-  position: absolute;
-  width: 100%;
-  font-weight: 100;
-  margin: 10px;
-  padding: auto;
+nav {
+  background: #353535;
+  color: var(--text-color);
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
 }
 
-.nav {
-  text-align: center;
+.container {
+  padding: 20px 40px;
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 90%;
+  transition: all 0.3s ease-in-out;
+  color: var(--text-color);
+  display: flex;
 }
 
-ul li {
-  display: inline-block;
-  padding: 0 5px;
+
+
+a:visited {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.title {
+  margin: 0;
+}
+
+/*Light and Dark theme Toggle*/
+
+.toggler-container {
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.toggler {
+  width: 60px;
+  margin: 0 10px;
+  background: #222;
+  height: 100%;
+  border-radius: 100px;
+  position: relative;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+}
+
+.circle {
+  background-color: orange;
+  height: 20px;
+  width: 20px;
+  border-radius: 100px;
+  transition: all 0.3s ease-in-out
+}
+
+.light p {
+  color: var(--background-color);
+}
+
+
+.light .toggler {
+  background: #333;
+}
+
+.light .toggler .circle {
+  transform: translateX(30px);
+  background-color: white;
+}
+
+.fullscreen.light {
+  background-color: #eee;
+  color: black;
+}
+
+.light nav {
+  background-color: var(--text-color);
+
+}
+
+.light a:visited {
+  text-decoration: none;
+  color: var(--background-color);
+}
+
+.light nav ul li {
+
+  color: var(--background-color);
+}
+
+.light .section-ow .container .container-center {
+  color: var(--background-color);
 }
 
 /*Heading*/
@@ -65,14 +144,19 @@ ul li {
 #container-2 {
   display: flex;
   align-content: center;
+  padding-left: 32vw;
+  padding-right: 20vw;
+  align-content: center;
 }
 
 #container-upload {
   margin: 1.1rem;
   padding: 1.1rem;
-  height: 40vh;
-  width: 50vw;
-  border-radius: 10px;
+  height: 30vh;
+  width: 30vw;
+  border-radius: 30px;
+  background-color: #4f4f50;
+
 }
 
 #container-share {
@@ -140,9 +224,15 @@ ul li {
 
 /*Toggle*/
 
-body.dark {background-color: #ffffff;} /* #9b59b6 */
+body.dark {
+  background-color: #ffffff;
+}
 
-body.dark h1 body.dark .support a {color: #fff;}
+/* #9b59b6 */
+
+body.dark h1 body.dark .support a {
+  color: #fff;
+}
 
 .checkbox {
   opacity: 0;
@@ -162,9 +252,13 @@ body.dark h1 body.dark .support a {color: #fff;}
   align-items: center;
 }
 
-.fa-moon {color: #f1c40f;}
+.fa-moon {
+  color: #f1c40f;
+}
 
-.fa-sun {color: #f39c12;}
+.fa-sun {
+  color: #f39c12;
+}
 
 .checkbox-label .ball {
   background-color: #fff;
@@ -177,6 +271,27 @@ body.dark h1 body.dark .support a {color: #fff;}
   transition: transform 0.2s linear;
 }
 
-.checkbox:checked + .checkbox-label .ball {
+.checkbox:checked+.checkbox-label .ball {
   transform: translateX(24px);
+}
+
+#cover-image {
+  padding: 10px;
+  margin: 5px;
+  height: 30vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  opacity: 80%;
+}
+
+#cover-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.container ul li a {
+  list-style: none;
 }

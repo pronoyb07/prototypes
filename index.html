@@ -1,69 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./CSS/style.css">
-  <title>Health Buddy</title>
-</head>
+    <title>Health Buddy</title>
+  </head>
 
-<body>
+  <body>
+    <div class="fullscreen">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/about.html"
+                  >About</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="toggler-container">
+          <p>DARK🌑</p>
+          <div class="toggler">
+            <div class="circle"></div>
+          </div>
+          <p>LIGHT🌞</p>
+        </div>
+      </nav>
+      <!-- <nav>
+        <div class="container">
+          <ul>
+            <li><a href="./index.html"> Home</a></li>
+            <li><a href="./about.html"> About Us</a></li>
+          </ul>
+          <div class="toggler-container">
+            <p>DARK🌑</p>
+            <div class="toggler">
+              <div class="circle"></div>
+            </div>
+            <p>LIGHT🌞</p>
+          </div>
+        </div>
+      </nav> -->
 
-  <div class="parentDiv">
-    <div class="nav">
-      <ul>
-        <li> <a href="./index.html"> Home</a></li>
-        <li> <a href="./about.html"> About Us</a></li>
-      </ul>
-    </div>
-  </div>
-
-  <header class="hero">
-    <h1>Product Analysis using computer vision </h1>
-  </header>
-
-  <div id="container-2">
-    <div id="container-upload">
-
-      <div class="upload-box">
-        <svg xmlns="http://www.w3.org/2000/svg" class="pdf" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1"
-            d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-          </path>
-        </svg>
-        <label class="fileInput-label" for="file-input">
-          <input type="file" id="file-input">
-
-          <span>Upload Scanned Image</span>
-        </label>
-
+      <div id="cover-image">
+        <img src="./background.jpg" alt="Background Image" />
       </div>
+
+      <div id="container-2">
+        <div id="container-upload">
+          <div class="upload-box">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="pdf"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1"
+                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+              ></path>
+            </svg>
+            <label class="fileInput-label" for="file-input">
+              <input type="file" id="file-input" />
+
+              <span>Upload Scanned Image</span>
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <section class="section-ow">
+        <div class="container container-center">
+          <p>
+            I get up, I get down and I'm jumping around And the rumpus and
+            ruckus are comfortable now Been a hell of a ride but I'm thinking
+            it's time to grow Bang! Bang! Bang! So I got an apartment across
+            from the park Put quinoa in my fridge, still I'm not feeling grown
+            Been a hell of a ride but I'm thinking it's time to go Bang! Bang!
+            Bang! (Here we go) So put your best face on everybody Pretend you
+            know this song Everybody come hang (come hang) Let's go out with a
+            bang Bang! Bang! Bang! I'm way too young to lie here forever I'm way
+            too old to try so whatever come hang (come hang) Let's go out with a
+            bang Bang! Bang! Bang! Feel like I'm gonna puke 'cause my taxes are
+            due Do my password begin with a one or a two? Been a hell of a ride
+            but I'm thinking it's time to grow Bang! Bang! Bang! (Metronome)
+            Man, I'm up to something (up to something) Ooh de la de do, thank
+            you all for coming (all for coming) I hope you like the show 'Cause
+            it's on a budget (on a budget) So ooh de la de do Yeah, come on,
+            here we go Yeah, come on (Here we go) So put your best face on
+            everybody Pretend you know this song Everybody come hang (come hang)
+            Let's go out with a bang Bang! Bang! Bang! I'm way too young to lie
+            here forever I'm way too old to try so whatever come hang (come
+            hang) Let's go out with a bang Bang! Bang! Bang! (Bang! Bang! Bang!
+            Bang!) Bang! Bang! Bang! (Bang! Bang! Bang! Bang! Bang! Bang!) Been
+            a hell of a ride but I'm thinking it's time to go So put your best
+            face on everybody Pretend you know this song Everybody come hang
+            Let's go out with a bang Bang! Bang! Bang! (Here we go) So put your
+            best face on everybody Pretend you know this song Everybody come
+            hang (come hang) Let's go out with a bang Bang! Bang! Bang! (Bang!
+            Bang! Bang! Bang! Bang! Bang!) I'm way too young to lie here forever
+            I'm way too old to try so whatever come hang (come hang) Let's go
+            out with a bang Bang! Bang! Bang! (Here we go) Bang! Bang!
+          </p>
+        </div>
+      </section>
+      <br />
+      <!-- <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+          <section class="mb-4">
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-twitter"></i
+            ></a>
+
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-google"></i
+            ></a>
+
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-instagram"></i
+            ></a>
+
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+
+            <a
+              class="btn btn-outline-light btn-floating m-1"
+              href="#!"
+              role="button"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+        </div>
+
+        <div
+          class="text-center p-3"
+          style="background-color: rgba(0, 0, 0, 0.2)"
+        >
+          © 2022 Copyright
+        </div>
+      </footer> -->
+      <script src="./app.js"></script>
     </div>
-  </div>
-
-  <section class="section ow">
-    <div class="container container-center">
-      <p></p>
-
-
-    </div>
-  </section>
-
-
-
-  <div>
-    <input type="checkbox" class="checkbox" id="checkbox">
-    <label for="checkbox" class="checkbox-label">
-      <i class="fas fa-moon"></i>
-      <i class="fas fa-sun"></i>
-      <span class="ball"></span>
-    </label>
-  </div>
-
-  <script src="./app.js"></script>
-
-</body>
-
+  </body>
 </html>
